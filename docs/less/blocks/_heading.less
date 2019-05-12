@@ -1,0 +1,47 @@
+.heading {
+	position: relative;
+	font-size: 28px;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 30px;
+	color: #333;
+	
+	@media (min-width: 1200px) {
+		font-size: 38px;
+		margin-bottom: 40px;
+	}
+	&--m-b-description-h {
+			margin-bottom: 17px;
+		}
+
+	&--number:before {
+		display: block;
+		width: 26px;
+		height: 26px;
+		padding: 5px 0 0 8px;
+		position: absolute;
+		left: -13px;
+		top: -37px;
+		-webkit-border-radius: 13px;
+		        border-radius: 13px;
+		font-size: 16px;
+		font-weight: 700;
+		color: #fff;
+		background-color: @orange;
+		content: "";
+		
+		@media (min-width: 1200px) {
+		top: -30px;
+		left: -32px;
+		} 
+	}
+
+	&--number-1:before {
+		content: "1";
+	}
+
+	&--number-2:before {
+		content: "2";
+	}  
+
+}

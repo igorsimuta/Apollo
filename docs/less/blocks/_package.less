@@ -1,0 +1,63 @@
+.package {
+  padding: 34px 25px 47px;	
+  border-radius: 7px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 40px 0px #63758a4c;
+  color: #242526;
+  margin-bottom: 40px;
+  
+  &.last {
+  	margin-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+  	margin-bottom: 0;
+  }  
+}
+.package__type {
+	font-size: 12px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.package__price {
+	font-size: 48px;
+	line-height: 1;
+	font-weight: 700;
+	margin-bottom: 23px;
+	&:after {
+	content: "c";
+	font-family: 'als_rublregular';
+	} 
+}
+.package__period {
+	font-size: 12px;
+	margin-bottom: 35px;
+}
+.package__benefits {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 40px;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		li {
+			margin: 0;
+			padding: 0;
+			margin-bottom: 10px;
+			
+			&:before {
+				content: "";
+				display: inline-block;
+				width: 12px;
+				height: 12px;
+				background-image: url('../img/icons/ok-icon.png');
+				background-repeat: no-repeat;
+				background-position: left 4px;
+				margin-right: 10px;
+			} 
+		} 
+	} 
+}
+.button {
+}
